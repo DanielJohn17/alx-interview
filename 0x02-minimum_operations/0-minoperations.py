@@ -11,7 +11,7 @@ def minOperations(n: int) -> int:
     temp = ""
     operations = 0
 
-    if n <= 0 or n >= 2147483640:
+    if not isinstance(n, int):
         return 0
 
     while len(file) < n:
